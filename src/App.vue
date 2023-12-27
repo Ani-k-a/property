@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ApartmentItem
+    <ApartmentsItem
       :description="apartment.description"
       :price="apartment.price"
       :title="apartment.title"
@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import ApartmentItem from "./components/apartment/ApartmentItem.vue";
+import ApartmentsItem from "./components/apartment/ApartmentsItem.vue";
 export default {
   name: "App",
   components: {
-    ApartmentItem,
+    ApartmentsItem,
   },
   data() {
     return {
