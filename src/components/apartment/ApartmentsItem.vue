@@ -1,7 +1,7 @@
 <template>
   <div class="apartments-item">
     <div class="apartments-item__inner">
-      <img :src="photo" alt="description" class="apartments-item__photo" />
+      <img :src="imageSrc" alt="description" class="apartments-item__photo" />
       <div class="apartments-item__content">
         <p class="apartments-item__description">{{ description }}</p>
         <div class="apartments-item__rating">
@@ -34,7 +34,7 @@ export default {
       type: Number,
       required: true,
     },
-    photo: {
+    imageSrc: {
       type: String,
       default: "",
     },
