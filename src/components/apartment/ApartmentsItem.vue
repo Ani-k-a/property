@@ -1,4 +1,5 @@
 <template>
+  <!-- <div class="apartments-item" @click="log(2, $event)"> -->
   <div class="apartments-item">
     <div class="apartments-item__inner">
       <img :src="imageSrc" alt="description" class="apartments-item__photo" />
@@ -8,6 +9,9 @@
           <StarRating :rating="rating" />
         </div>
         <div class="apartments-item__price">UAH {{ price }}</div>
+        <a href="https://facedook.con" @click.prevent.stop="handleLinkClick"
+          >Facebook</a
+        >
       </div>
     </div>
   </div>
@@ -37,6 +41,15 @@ export default {
     imageSrc: {
       type: String,
       default: "",
+    },
+  },
+  methods: {
+    log(index, event) {
+      console.log(index);
+      console.log(event);
+    },
+    handleLinkClick() {
+      console.log("facebook.clicked");
     },
   },
 };

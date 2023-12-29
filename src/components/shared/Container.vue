@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <slot></slot>
+    <slot>Defauly value</slot>
   </div>
 </template>
 
